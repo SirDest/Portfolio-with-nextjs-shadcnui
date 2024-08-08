@@ -31,7 +31,7 @@ const Home = () => {
             </div>
           </div>
           <div className='order-1 xl:order-none mt-8 xl:mt-0 mb-8 xl:mb-0'>
-            {/* <Photo /> */}
+            <Photo />
           </div>
         </div>
       </div>

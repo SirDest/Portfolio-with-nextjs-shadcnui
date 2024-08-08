@@ -15,6 +15,7 @@ const Photo = () => {
           transition: { delay: 2, duration: 0.4, ease: "easeIn" },
         }}
       >
+        {/* image */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
@@ -32,6 +33,34 @@ const Photo = () => {
             alt=''
           />
         </motion.div>
+
+        {/* circle */}
+        <motion.svg
+          className='w-[230px] h-[230px] xl:w-[498px] xl:h-[498px] '
+          fill='transperent'
+          viewBox='0,0 506 506'
+          xmlns='http://www.w3.org/2000/svg'
+        >
+          <motion.circle
+            cx='253'
+            r='250'
+            cy='253'
+            stroke='#00ff99'
+            strokeWidth='4'
+            strokeLinejoin='round'
+            strokeLinecap='round'
+            initial={{ strokeDasharray: "24 10 0 0" }}
+            animate={{
+              strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
+              rotate: [120, 360],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+          />
+        </motion.svg>
       </motion.div>
     </div>
   );
