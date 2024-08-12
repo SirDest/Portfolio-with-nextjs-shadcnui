@@ -20,7 +20,7 @@ const iconStyles = [
 
 const Socials = () => {
   return (
-    <div className='flex gap-6 items-center mb-2 xl:mb-0'>
+    <div className='flex gap-6 items-center mb-4 xl:mb-0'>
       <Link
         href='/'
         className={`${generateClassName(iconStyles)} bg-gray-100 text-gray-800`}

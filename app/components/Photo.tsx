@@ -22,7 +22,7 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className='w-[230px] h-[230px] xl:w-[498px] xl:h-[498px] mix-blend-lighten rounded-[50%] '
+          className='w-[230px] h-[230px] xl:w-[498px] xl:h-[498px] mix-blend-lighten rounded-[50%] absolute'
         >
           <Image
             className='rounded-[50%]'
