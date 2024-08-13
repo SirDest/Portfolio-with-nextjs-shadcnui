@@ -4,7 +4,7 @@ import React from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
-import { links } from "./utils/links";
+import { links } from "../utils/links";
 import { link } from "fs";
 import { ReceiptPoundSterling } from "lucide-react";
 

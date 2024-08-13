@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import CountUp from "react-countUp";
-import { stats } from "./utils/stats";
+import { stats } from "../utils/stats";
 
 const Stats = () => {
   return (

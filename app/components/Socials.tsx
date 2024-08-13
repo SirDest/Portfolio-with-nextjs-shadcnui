@@ -1,4 +1,4 @@
-import { generateClassName } from "@/app/components/utils/tailwind";
+import { generateClassName } from "@/app/utils/tailwind";
 import Link from "next/link";
 import React from "react";
 import { FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";

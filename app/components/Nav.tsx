@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { links } from "./utils/links";
+import { links } from "../utils/links";
 
 const Nav = () => {
   const pathname = usePathname();
   return (
-    <nav className='flex gap-6'>
+    <nav className='flex gap-6 z-10'>
       {links.map(({ name, path }, index) => (
         <Link
           key={index}
