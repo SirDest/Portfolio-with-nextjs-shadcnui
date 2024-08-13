@@ -4,15 +4,15 @@ export const stats = [
     text: "Years of experience",
   },
   {
-    num: 13,
+    num: 12,
     text: "Projects completed",
   },
   {
-    num: 12,
+    num: 10,
     text: "Technologies mastered",
   },
   {
-    num: 600,
+    num: 500,
     text: "Code commits",
   },
 ];
