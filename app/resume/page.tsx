@@ -1,57 +1,68 @@
 "use client";
 import React from "react";
 
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 import {
-  FaHtml5,
-  FaJs,
-  FaCss3,
-  FaReact,
-  FaNodeJs,
-  FaBootstrap,
-} from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiGit } from "react-icons/si";
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
-const aboutMe = {
-  title: "About Me",
-  description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptates voluptatibus saepe error assumenda!",
-  info: [
-    {
-      fieldname: "Name",
-      fieldValue: "Luke Coleman",
-    },
-    {
-      fieldname: "Phone",
-      fieldValue: "+234 (0) 813 284 6999",
-    },
-    {
-      fieldname: "Experience",
-      fieldValue: "2+ Years",
-    },
-    {
-      fieldname: "Nationality",
-      fieldValue: "Nigerian",
-    },
-    {
-      fieldname: "Email",
-      fieldValue: "akinro.destined@gmail.com",
-    },
-    {
-      fieldname: "Freelance",
-      fieldValue: "Availiable",
-    },
-    {
-      fieldname: "Language",
-      fieldValue: "English",
-    },
-  ],
-};
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { easeIn, motion } from "framer-motion";
+import Education from "./Education";
+import Experience from "./Experience";
+import Skills from "./Skills";
 
-const experience = {
-  icon: "",
-};
 const Resume = () => {
-  return <div>Resume </div>;
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: {
+          delay: 2.4,
+          duration: 0.4,
+          ease: "easeIn",
+        },
+      }}
+      className='min-h-[80vh] flex items-center justify-center py-12 xl:py-0'
+    >
+      <div className='container max-auto'>
+        <Tabs
+          defaultValue='experience'
+          className='flex flex-col xl:flex-row gap-[60px]'
+        >
+          <TabsList className='flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6'>
+            <TabsTrigger value='experience'>Experience</TabsTrigger>
+            <TabsTrigger value='education'>Education</TabsTrigger>
+            <TabsTrigger value='skills'>Skills</TabsTrigger>
+            <TabsTrigger value='about'>About Me</TabsTrigger>
+          </TabsList>
+
+          <div className='min-h-[70vh] w-full'>
+            <TabsContent value='experience' className='w-full'>
+              <Experience />
+            </TabsContent>
+
+            <TabsContent value='education' className='w-full'>
+              <Education />
+            </TabsContent>
+
+            <TabsContent value='skills' className='w-full'>
+              <Skills />
+            </TabsContent>
+
+            <TabsContent value='about' className='w-full'>
+              about
+            </TabsContent>
+          </div>
+        </Tabs>
+      </div>
+    </motion.div>
+  );
 };
 
 export default Resume;
