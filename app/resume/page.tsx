@@ -12,9 +12,10 @@ import {
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { easeIn, motion } from "framer-motion";
-import Education from "./Education";
-import Experience from "./Experience";
-import Skills from "./Skills";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import About from "./components/About";
 
 const Resume = () => {
   return (
@@ -55,8 +56,11 @@ const Resume = () => {
               <Skills />
             </TabsContent>
 
-            <TabsContent value='about' className='w-full'>
-              about
+            <TabsContent
+              value='about'
+              className='w-full text-center xl:text-left'
+            >
+              <About />
             </TabsContent>
           </div>
         </Tabs>
