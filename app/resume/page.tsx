@@ -51,7 +51,7 @@ const Resume = () => {
               <Education />
             </TabsContent>
 
-            <TabsContent value='skills' className='w-full'>
+            <TabsContent value='skills' className='w-full h-full'>
               <Skills />
             </TabsContent>
 

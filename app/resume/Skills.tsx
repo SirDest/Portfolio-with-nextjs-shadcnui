@@ -19,6 +19,13 @@ import {
   SiTypescript,
   SiMui,
 } from "react-icons/si";
+import { frame } from "framer-motion";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@radix-ui/react-tooltip";
 
 const skills = {
   icon: "",
@@ -79,23 +86,31 @@ const skills = {
 
 const Skills = () => {
   return (
-    <div className='flex flex-col gap-[30px] text-center xl:text-left '>
-      <h3 className='text-4xl font-bold'>{skills.title}</h3>
-      <p className='max-w-[600px] text-white'>{skills.description}</p>
-      <ScrollArea className='h-[480px]'>
-        <ul className='grid grid-cols-2 lg:grid-cols-3 gap-8'>
-          {skills.skillsList.map(({ icon, framework }, i) => {
-            return (
-              <li
-                key={i}
-                className='flex gap-2 justify-center place-content-center items-center bg-[#232329] text-base h-[55px] w-[180px] rounded-md'
-              >
-                {icon} {framework}
-              </li>
-            );
-          })}
-        </ul>
-      </ScrollArea>
+    <div className='flex flex-col gap-[30px] '>
+      <div className='flex flex-col gap-[30px] text-center xl:text-left'>
+        <h3 className='text-4xl font-bold'>{skills.title}</h3>
+        <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>
+          {skills.description}
+        </p>
+      </div>
+      <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]'>
+        {skills.skillsList.map(({ icon, framework }, i) => (
+          <li key={i}>
+            <TooltipProvider delayDuration={100}>
+              <Tooltip>
+                <TooltipTrigger className='w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group'>
+                  <div className='text-6xl group-hover:text-[#97BC62] transition-all duration-300'>
+                    {icon}
+                  </div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>{framework}</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
