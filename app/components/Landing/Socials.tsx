@@ -1,6 +1,7 @@
+"use client";
+import React from "react";
 import { generateClassName } from "@/app/utils/tailwind";
 import Link from "next/link";
-import React from "react";
 import { FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -19,20 +20,27 @@ const iconStyles = [
 ];
 
 const Socials = () => {
+  const githubLink = "https://github.com/sirdest";
+  const linkedinLink = "https://www.linkedin.com/in/destined-akinro";
+
+  const handleOpenInNewTab = (url: string) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <div className='flex gap-6 items-center mb-4 xl:mb-0'>
-      <Link
-        href='/'
+      <button
+        onClick={() => handleOpenInNewTab(githubLink)}
         className={`${generateClassName(iconStyles)} bg-gray-100 text-gray-800`}
       >
         <FaGithub size={25} />
-      </Link>
-      <Link
-        href='/'
+      </button>
+      <button
+        onClick={() => handleOpenInNewTab(linkedinLink)}
         className={`${generateClassName(iconStyles)} bg-blue-600 text-white`}
       >
         <FaLinkedinIn size={25} />
-      </Link>
+      </button>
       <Link
         href='/'
         className={`${generateClassName(iconStyles)} bg-gray-300 text-red-500`}
