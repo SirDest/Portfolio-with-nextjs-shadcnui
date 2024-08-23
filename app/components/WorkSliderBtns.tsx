@@ -27,7 +27,7 @@ const btnStyles = [
   "text-primary",
   "text-[22px]",
   "w-[44px]",
-  "h-44px]",
+  "h-[44px]",
   "flex",
   "justify-center",
   "items-center",
