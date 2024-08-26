@@ -25,7 +25,11 @@ const projects = [
     title: "eCommerce Website",
     description:
       "A basic eCommerce website built with React and TypeScript, featuring product listings and basic shopping cart functionality",
-    stack: [{ name: "Html 5" }, { name: "CSS 3" }, { name: "Javascript" }],
+    stack: [
+      { name: "React JS" },
+      { name: "Tailwind CSS" },
+      { name: "Redux Toolkit" },
+    ],
     image: ecommerceimg,
     live: "https://destined-ecommerce-site.vercel.app/",
     github: "https://github.com/SirDest/simple-e-commerce-site",
@@ -38,24 +42,24 @@ const projects = [
       "This repository hosts my personal portfolio, showcasing my frontend development skills. It also reflects my expertise in building responsive web applications with modern technologies.",
     stack: [
       { name: "Next JS" },
-      { name: "Tailwind Css" },
+      { name: "Tailwind CSS" },
       { name: "Framer Motion" },
     ],
     image: ecommerceimg,
     live: "https://destined-ecommerce-site.vercel.app/",
     github: "https://github.com/SirDest/Portfolio-Website",
   },
-  {
-    num: "03",
-    category: "frontend",
-    title: "eCommerce Website",
-    description:
-      "A basic eCommerce website built with React and TypeScript, featuring product listings and basic shopping cart functionality",
-    stack: [{ name: "Html 5" }, { name: "CSS 3" }, { name: "Javascript" }],
-    image: ecommerceimg,
-    live: "https://destined-ecommerce-site.vercel.app/",
-    github: "https://github.com/SirDest/simple-e-commerce-site",
-  },
+  // {
+  //   num: "03",
+  //   category: "frontend",
+  //   title: "eCommerce Website",
+  //   description:
+  //     "A basic eCommerce website built with React and TypeScript, featuring product listings and basic shopping cart functionality",
+  //   stack: [{ name: "Html 5" }, { name: "CSS 3" }, { name: "Javascript" }],
+  //   image: ecommerceimg,
+  //   live: "https://destined-ecommerce-site.vercel.app/",
+  //   github: "https://github.com/SirDest/simple-e-commerce-site",
+  // },
 ];
 
 const Work = () => {
@@ -83,13 +87,13 @@ const Work = () => {
               <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
                 {project.num}
               </div>
-              <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-[#97BC62] transition-all duration-500 capitalize'>
+              <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
                 {project.title}
               </h2>
               <p className='text-white/60'>{project.description}</p>
               <ul className='flex gap-4'>
                 {project.stack.map(({ name }, index) => (
-                  <li key={index} className='text-xl text-[#97BC62]'>
+                  <li key={index} className='text-xl text-accent'>
                     {name}
                     {index !== project.stack.length - 1 && ","}
                   </li>
@@ -102,7 +106,7 @@ const Work = () => {
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
-                          <BsArrowUpRight className='text-white text-3xl group-hover:text-[#97BC62]' />
+                          <BsArrowUpRight className='text-white text-3xl group-hover:text-accent' />
                         </TooltipTrigger>
                         <TooltipContent>
                           <p>Live Project</p>
@@ -116,7 +120,7 @@ const Work = () => {
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group'>
-                          <BsGithub className='text-white text-3xl group-hover:text-[#97BC62]' />
+                          <BsGithub className='text-white text-3xl group-hover:text-accent' />
                         </TooltipTrigger>
                         <TooltipContent>
                           <p>Github Repo</p>

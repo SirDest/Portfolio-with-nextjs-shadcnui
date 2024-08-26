@@ -29,10 +29,10 @@ const Services = () => {
                     {num}
                   </div>
                 </div>
-                <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-[#97BC62] transition-all duration-500'>
+                <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500'>
                   {title}
                 </h2>
-                <p className='text-white/60 group-hover:text-[#97BC62] '>
+                <p className='text-white/60 group-hover:text-accent '>
                   {description}
                 </p>
               </div>
