@@ -50,8 +50,11 @@ const Contact = () => {
             <form className='flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl'>
               <h3 className='text-4xl text-accent'>Let`s work together</h3>
               <p className='text-white/60'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi earum beatae harum adipisci autem.
+                I'd love to hear from you! Whether you have a question, a
+                project proposal or just want to connect. Feel free to reach
+                out. I'm always open to discussing new ideas, opportunities, or
+                collaborations. You can also reach me directly via email or
+                phone. Let's make something great together!
               </p>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                 <Input type='firstname' placeholder='Firstname' />
