@@ -8,7 +8,7 @@ const Landing = () => {
   return (
     <div className='container mx-auto h-full'>
       <div className='flex flex-col xl:flex-row items-center justify-between'>
-        <div className='order-2 xl:order-none text-center xl:text-left'>
+        <div className='order-2 xl:order-none text-center xl:text-left gap-x-1 xl:gap-0'>
           <span>FrontEnd Developer</span>
           <h1 className='h1 text-xl'>Hello I`m</h1>
           <h1 className='h1 text-accent'>Akinro Destined</h1>
