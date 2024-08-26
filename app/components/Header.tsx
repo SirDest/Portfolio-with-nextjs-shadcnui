@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Nav from "./Nav";
 import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
 import MobileNav from "./MobileNav";
+import DownloadResumeButton from "./Landing/DownloadResume";
 
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
         {/* Logo */}
         <Link href='/'>
           <h1 className='text-4xl font-semibold'>
-            A<span className='text-[#97BC62]'>.</span>D
+            A<span className='text-accent'>.</span>D
           </h1>
         </Link>
 
@@ -19,10 +19,8 @@ const Header = () => {
 
         <div className='hidden xl:flex items-center gap-8'>
           <Nav />
-          {/* <Button className='gap-2'>
-            Download CV <FiDownload className='text-xl' />
-          </Button> */}
-          <Button>Hire me</Button>
+          <DownloadResumeButton />
+          {/* <Button>Hire me</Button> */}
         </div>
 
         {/* Mobile nav */}

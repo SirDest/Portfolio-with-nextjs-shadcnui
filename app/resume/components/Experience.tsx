@@ -15,12 +15,12 @@ const Experience = () => {
                 key={i}
                 className='bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'
               >
-                <span className='text-[#97BC62]'>{duration}</span>
+                <span className='text-accent'>{duration}</span>
                 <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>
                   {position}
                 </h3>
                 <div className='flex items-center gap-3'>
-                  <span className='w-[6px] h-[6px] rounded-full bg-[#97BC62]'></span>
+                  <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
                   <p className='text-white/60'>{company}</p>
                 </div>
               </li>

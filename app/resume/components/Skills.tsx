@@ -99,7 +99,7 @@ const Skills = () => {
             <TooltipProvider delayDuration={100}>
               <Tooltip>
                 <TooltipTrigger className='w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group'>
-                  <div className='text-6xl group-hover:text-[#97BC62] transition-all duration-300'>
+                  <div className='text-6xl group-hover:text-accent transition-all duration-300'>
                     {icon}
                   </div>
                 </TooltipTrigger>

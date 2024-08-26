@@ -22,8 +22,8 @@ const containerStyle = [
 ];
 
 const btnStyles = [
-  "bg-[#97BC62]",
-  "hover:bg-[#97BC62]-hover",
+  "bg-accent",
+  "hover:bg-accent-hover",
   "text-primary",
   "text-[22px]",
   "w-[44px]",

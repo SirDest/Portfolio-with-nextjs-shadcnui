@@ -1,9 +1,8 @@
 import React from "react";
 
-import { FiDownload } from "react-icons/fi";
-import { Button } from "@/components/ui/button";
 import Socials from "./Socials";
 import Photo from "./Photo";
+import DownloadResumeButton from "./DownloadResume";
 
 const Landing = () => {
   return (
@@ -12,19 +11,13 @@ const Landing = () => {
         <div className='order-2 xl:order-none text-center xl:text-left'>
           <span>FrontEnd Developer</span>
           <h1 className='h1 text-xl'>Hello I`m</h1>
-          <h1 className='h1 text-[#97BC62]'>Akinro Destined</h1>
+          <h1 className='h1 text-accent'>Akinro Destined</h1>
           <p className='max-w-[500px] mb-9 text-white/80'>
             I excel at crafting elegant digital experiences and I am proficient
             in various programming language and technologies.
           </p>
           <div className='flex flex-col xl:flex-row items-center gap-8'>
-            <Button
-              variant='outline'
-              size='lg'
-              className='uppercase flex items-center gap-2'
-            >
-              Download CV <FiDownload className='text-xl' />
-            </Button>
+            <DownloadResumeButton />
             <div className='flex items-center'>
               <Socials />
             </div>

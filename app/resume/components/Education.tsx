@@ -15,7 +15,7 @@ const Education = () => {
                 key={i}
                 className='bg-[#232329] h-[250px] py-6 px-10 rounded-xl flex flex-col justify-between items-center lg:items-start gap-1'
               >
-                <span className='text-[#97BC62]'>{duration}</span>
+                <span className='text-accent'>{duration}</span>
                 <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>
                   {degree}
                 </h3>
