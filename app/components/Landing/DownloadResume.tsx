@@ -5,12 +5,19 @@ import { FiDownload } from "react-icons/fi";
 
 const DownloadResumeButton: React.FC = () => {
   const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/AkinroDestinedResume.pdf";
-    link.download = "AkinroDestinedResume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    fetch("/AkinroDestinedResume.pdf")
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "AkinroDestinedResume.pdf");
+        document.body.appendChild(link);
+        link.click();
+        link.parentNode?.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch((error) => console.error("Download error:", error));
   };
 
   return (
