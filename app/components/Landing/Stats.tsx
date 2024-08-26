@@ -11,7 +11,7 @@ const Stats = () => {
           {stats.map(({ num, text }, index) => {
             return (
               <div
-                className='flex-1 flex min-w-[calc(50%-16px)] gap-4 xl:justify-start xl:text-left items-center justify-center'
+                className='flex-1 flex min-w-[calc(50%-16px)] gap-2 xl:justify-start xl:text-left items-center justify-center'
                 key={index}
               >
                 <CountUp
@@ -20,7 +20,7 @@ const Stats = () => {
                   delay={2}
                   className='text-4xl xl:text-6xl font-extrabold'
                 />
-                <span className='text-2xl xl:text-4xl'>+</span>
+                <span className='text-xl xl:text-4xl'>+</span>
                 <p
                   className={`${
                     text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
