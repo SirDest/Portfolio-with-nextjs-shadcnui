@@ -1,8 +1,7 @@
 import Link from "next/link";
-import Nav from "./Nav";
-import { Button } from "@/components/ui/button";
 import MobileNav from "./MobileNav";
-import DownloadResumeButton from "./Landing/DownloadResume";
+import DownloadResumeButton from "../Landing/DownloadResume";
+import Nav from "./Nav";
 
 const Header = () => {
   return (

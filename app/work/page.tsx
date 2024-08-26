@@ -16,7 +16,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Image from "next/image";
-import WorkSliderBtns from "../components/WorkSliderBtns";
+import WorkSliderBtns from "../components/Transitions/WorkSliderBtns";
 
 const projects = [
   {
