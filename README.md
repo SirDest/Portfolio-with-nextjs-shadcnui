@@ -53,7 +53,8 @@ Technologies:
 Tasks:
   <ul>
     <li>Added dynamic functionality with Next.js and TypeScript.</li>
-  <li>Ensured responsiveness and optimized performance across devices.</li>
+    <li>Ensured responsiveness and optimized performance across devices.</li>
+  </ul>
 
 # Features
 <ul>
@@ -63,5 +64,3 @@ Tasks:
   <li>Resume Download: Users can download a copy of my resume directly from the website.</li>
   <li>Contact Form: A simple contact form allows visitors to reach out to me directly.</li>
 </ul>
-  </ul>
-
