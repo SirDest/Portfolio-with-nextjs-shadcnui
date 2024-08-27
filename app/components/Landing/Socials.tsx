@@ -6,13 +6,14 @@ import { FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 import { HiOutlineMail } from "react-icons/hi";
+import { handleOpenInNewTab } from "@/app/utils/openInNewTab";
 
 const iconStyles = [
   "flex",
   "justify-center",
   "items-center",
   "p-2",
-  "w-full",
+  "w-fit",
   "rounded",
   "ease-in-out",
   "duration-300",
@@ -22,10 +23,6 @@ const iconStyles = [
 const Socials = () => {
   const githubLink = "https://github.com/sirdest";
   const linkedinLink = "https://www.linkedin.com/in/destined-akinro";
-
-  const handleOpenInNewTab = (url: string) => {
-    window.open(url, "_blank");
-  };
 
   return (
     <div className='flex gap-6 items-center mb-4 xl:mb-0'>

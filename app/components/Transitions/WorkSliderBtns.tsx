@@ -4,8 +4,7 @@ import React from "react";
 import { useSwiper } from "swiper/react";
 
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
-
-import { generateClassName } from "../utils/tailwind";
+import { generateClassName } from "@/app/utils/tailwind";
 
 const containerStyle = [
   "flex",

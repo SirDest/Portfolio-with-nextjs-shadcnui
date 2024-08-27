@@ -16,6 +16,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import Socials from "../components/Landing/Socials";
 const info = [
   {
     icon: <FaPhoneAlt />,
@@ -100,6 +101,9 @@ const Contact = () => {
                   </li>
                 );
               })}
+              <li>
+                <Socials />
+              </li>
             </ul>
           </div>
         </div>

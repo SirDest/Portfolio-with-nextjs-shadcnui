@@ -18,9 +18,9 @@ const Stats = () => {
                   end={num}
                   duration={5}
                   delay={2}
-                  className='text-4xl xl:text-6xl font-extrabold'
+                  className='text-2xl xl:text-6xl font-extrabold'
                 />
-                <span className='text-xl xl:text-4xl'>+</span>
+                <span className='text-2xl xl:text-4xl'>+</span>
                 <p
                   className={`${
                     text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"

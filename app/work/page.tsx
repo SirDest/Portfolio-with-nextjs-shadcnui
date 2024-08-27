@@ -22,7 +22,7 @@ const projects = [
   {
     num: "01",
     category: "frontend",
-    title: "eCommerce Website",
+    title: "Simple eCommerce Site",
     description:
       "A basic eCommerce website built with React and TypeScript, featuring product listings and basic shopping cart functionality",
     stack: [
@@ -36,7 +36,7 @@ const projects = [
   },
   {
     num: "02",
-    category: "Frontend",
+    category: "frontend",
     title: "Personal Portfolio",
     description:
       "This repository hosts my personal portfolio, showcasing my frontend development skills. It also reflects my expertise in building responsive web applications with modern technologies.",
@@ -67,7 +67,6 @@ const Work = () => {
 
   const handleSlideChange = (swiper: SwiperClass) => {
     const currentIndex = swiper.activeIndex;
-
     setProject(projects[currentIndex]);
   };
 
