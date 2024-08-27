@@ -8,32 +8,32 @@ This repository shares my work as an online website where I showcase my resume, 
 ### 1. Initial Setup
 #### Technologies: TypeScript, Next.js, Tailwind CSS
 Tasks:
-<ol>
+<ul>
   <li>Set up the project structure with TypeScript and Next.js.</li>
   <li>Designed the base layout using Tailwind CSS.</li>
-</ol>
+</ul>
 
 ### 2. Component Development
 #### Technologies: Shadcn, Tailwind CSS
 Tasks:
-<ol>
+<ul>
   <li>Created reusable UI components using Shadcn.</li>
   <li>Styled components with Tailwind CSS for a consistent design.</li>
-</ol>
+</ul>
 
 ### 3. Interactive Elements
 #### Technologies: Framer Motion
 Tasks:
-<ol>
+<ul>
   <li>Integrated animations and transitions using Framer Motion.</li>
   <li>Enhanced user experience with smooth and interactive elements.</li>
-</ol>
+</ul>
 
 
 ### 4. Final Touches
 #### Technologies: Next.js, TypeScript, Tailwind CSS
 Tasks:
-<ol>
+<ul>
   <li>Added dynamic functionality with Next.js and TypeScript.</li>
   <li>Ensured responsiveness and optimized performance across devices.</li>
-</ol>
+</ul>
