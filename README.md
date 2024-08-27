@@ -1,8 +1,10 @@
 # Personal Portfolio Website
 
 #### Built with Next Js.
-<a href='https://akinro-destined.vercel.app'>Akinro Destined<a/>
-This repository shares my work as an online website where I showcase my resume, skills, projects and professional journey. The website is built using modern web technologies to ensure a responsive, interactive, and user-friendly experience.
+Click <a href='https://akinro-destined.vercel.app'>here</a> to check it out
+<p>
+  This repository shares my work as an online website where I showcase my resume, skills, projects and professional journey. The website is built using modern web technologies to ensure a responsive, interactive, and user-friendly experience.
+</p>
 
 ## Project timeline and technologies used
 
