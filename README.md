@@ -6,13 +6,16 @@ This repository shares my work as an online website where I showcase my resume, 
 ## Project timeline and technologies used
 
 #### 1. Initial Setup
-##### Technologies:
+Technologies:
+<ul>
   <li>TypeScript, Next.js, Tailwind CSS</li>
-  
-##### Tasks:
+</ul>
+
+  Tasks:
+<ul>
   <li>Set up the project structure with TypeScript and Next.js.</li>
   <li>Designed the base layout using Tailwind CSS.</li>
-
+</ul>
 
 #### 2. Component Development
 ##### Technologies:
