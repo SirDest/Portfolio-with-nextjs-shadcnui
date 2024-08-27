@@ -18,28 +18,38 @@ Technologies:
 </ul>
 
 #### 2. Component Development
-##### Technologies:
-  <li>Shadcn, Tailwind CSS</li>
+Technologies:
+  <ul>
+    <li>Shadcn, Tailwind CSS</li>
+  </ul>
 
-##### Tasks:
-  <li>Created reusable UI components using Shadcn.</li>
+Tasks:
+  <ul>
+    <li>Created reusable UI components using Shadcn.</li>
   <li>Styled components with Tailwind CSS for a consistent design.</li>
+  </ul>
 
 #### 3. Interactive Elements
-##### Technologies:
-  <li>Framer Motion</li>li>
+Technologies:
+  <ul>
+    <li>Framer Motion</li>
+  </ul>
 
-##### Tasks:
-  <li>Integrated animations and transitions using Framer Motion.</li>
+Tasks:
+  <ul>
+    <li>Integrated animations and transitions using Framer Motion.</li>
   <li>Enhanced user experience with smooth and interactive elements.</li>
-
-
+  </ul>
 
 #### 4. Final Touches
-##### Technologies:
-  <li>Next.js, TypeScript, Tailwind CSS</li>
+Technologies:
+  <ul>
+    <li>Next.js, TypeScript, Tailwind CSS</li>
+  </ul>
 
-##### Tasks:
-  <li>Added dynamic functionality with Next.js and TypeScript.</li>
+Tasks:
+  <ul>
+    <li>Added dynamic functionality with Next.js and TypeScript.</li>
   <li>Ensured responsiveness and optimized performance across devices.</li>
+  </ul>
 
