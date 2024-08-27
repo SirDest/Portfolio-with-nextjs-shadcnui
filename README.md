@@ -6,7 +6,7 @@ Click <a href='https://akinro-destined.vercel.app'>here</a> to check it out
   This repository shares my work as an online website where I showcase my resume, skills, projects and professional journey. The website is built using modern web technologies to ensure a responsive, interactive, and user-friendly experience.
 </p>
 
-## Project timeline and technologies used
+# Project timeline and technologies used
 
 ### 1. Initial Setup
 Technologies:
@@ -54,5 +54,14 @@ Tasks:
   <ul>
     <li>Added dynamic functionality with Next.js and TypeScript.</li>
   <li>Ensured responsiveness and optimized performance across devices.</li>
+
+# Features
+<ul>
+  <li>Responsive Design: The website is fully responsive and adapts to different screen sizes.</li>
+  <li>Interactive Animations: Framer Motion is used to create smooth and engaging animations throughout the site.</li>
+  <li>Project Showcase: Displays my projects with detailed descriptions and links to live demos and source code.</li>
+  <li>Resume Download: Users can download a copy of my resume directly from the website.</li>
+  <li>Contact Form: A simple contact form allows visitors to reach out to me directly.</li>
+</ul>
   </ul>
 
