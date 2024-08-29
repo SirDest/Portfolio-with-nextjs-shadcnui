@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import ecommerceimg from "@/static/images/projects/ecommercesample.jpg";
+import ecommerceimg from "@/static/images/projects/ecommerce-home-page.jpg";
+import portfolioimg from "@/static/images/projects/portfolio-home-page.jpg";
 import { motion } from "framer-motion";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -45,7 +46,7 @@ const projects = [
       { name: "Tailwind CSS" },
       { name: "Framer Motion" },
     ],
-    image: ecommerceimg,
+    image: portfolioimg,
     live: "https://destined-ecommerce-site.vercel.app/",
     github: "https://github.com/SirDest/Portfolio-Website",
   },
