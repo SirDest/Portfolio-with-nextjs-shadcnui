@@ -23,6 +23,7 @@ const iconStyles = [
 const Socials = () => {
   const githubLink = "https://github.com/sirdest";
   const linkedinLink = "https://www.linkedin.com/in/destined-akinro";
+  const twitterLink = "https://www.x.com/sirdest_dev";
 
   return (
     <div className='flex gap-6 items-center mb-4 xl:mb-0'>
@@ -45,6 +46,7 @@ const Socials = () => {
         <HiOutlineMail size={25} />
       </Link>
       <Link
+        onClick={() => handleOpenInNewTab(twitterLink)}
         href='/'
         className={`${generateClassName(iconStyles)} text-white bg-black`}
       >

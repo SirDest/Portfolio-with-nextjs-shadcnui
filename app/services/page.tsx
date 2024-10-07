@@ -1,10 +1,7 @@
 "use client";
 import React from "react";
-
-import { BsArrowDownRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { services } from "../utils/services";
-import Link from "next/link";
 
 const Services = () => {
   return (
@@ -32,7 +29,7 @@ const Services = () => {
                 <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500'>
                   {title}
                 </h2>
-                <p className='text-white/60 group-hover:text-accent '>
+                <p className='text-white/60 group-hover:text-accent  transition-all duration-500'>
                   {description}
                 </p>
               </div>
